@@ -33,7 +33,7 @@ def publishedVersions = getPublishedVersions()
 
 def ENV = System.getenv()
 
-def published = false
+def published = true//false
 def localMappingsPath = "$buildDir/v2Mappings"
 new File(localMappingsPath).mkdirs()
 file('mappings').eachFile {
